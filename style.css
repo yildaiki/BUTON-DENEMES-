@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: cornflowerblue;
+
+}
+a{
+    position: relative;
+    display: inline-block;
+    padding: 25px 70px;
+    background: linear-gradient(90deg, rgb(226, 223, 182), rgb(209, 74, 12));
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+
+}
+span1{
+    position: absolute;
+    background-color: white;
+    transform: translate(-40%, -40%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animasyon 1s linear infinite;
+}
+@keyframes animasyon{
+    0%{
+        width: 0px;
+        height: 0px;
+    }
+    100%{
+        width: 50px;
+        height: 50px;
+    }
+}
